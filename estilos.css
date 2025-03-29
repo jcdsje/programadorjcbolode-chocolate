@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+    /* background-color: #222; */
+    /* color: #eee; */
+    line-height: 1.6;
+}
+
+/* Adiciona margem lateral para deixar 100px de cada lado em telas maiores */
+@media (min-width: 1400px) {
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+header {
+    /* background-color:  */
+ 
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+ 
+}
+h1 h2 h3{
+    color: blue;
+}
+
+section {
+    /* background-color: #333; */
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.ingredientes {
+    color: #eee;
+    margin-bottom: 20px; /* Adiciona espaço abaixo da seção de ingredientes */
+}
+.centralizar{
+    color: blue;
+}
+
+.centralizar, h3 {
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h3{
+    color: rgb(149, 29, 5);
+}
+
+/* Move a lista para baixo da seção de ingredientes */
+.ingredientes + ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço acima da lista */
+}
+
+.ingredientes + ul li {
+    padding: 8px 0;
+    word-break: break-word;
+ 
+}
+
+p {
+    text-align: center;
+    color: rgb(192, 193, 193);
+    font-family: inherit;
+    padding: 15px;
+    line-height: 1.7;
+    font: bold;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /* height: auto; */
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.botoes-container {
+    display: flex; /* Coloca os botões lado a lado */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Adiciona espaço entre os botões */
+    margin-top: 20px; /* Adiciona espaço acima dos botões */
+}
+footer a:hover{
+    background-color: orange;
+    color: rgb(126, 14, 14);
+}
+.botoes-container a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+iframe{
+    padding: 15px;
+}
+.btn-youtube  {
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-youtube:hover{
+    color: rgb(241, 249, 4);
+    transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.github  {
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    /* color: white; */
+}
+.github  {
+    background-color: #060606;
+    color: #eee;
+    border: 1px solid #555;
+}
+a{
+    background-color: #eee;
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+footer {
+    text-align: center; /* Centraliza o conteúdo inline (como os links) dentro do footer */
+    padding: 20px; /* Adicione um pouco de padding ao footer, se desejar */
+    background-color: #333; /* Exemplo de cor de fundo para o footer */
+    color: #eee; /* Exemplo de cor de texto para o footer */
+}
+
+footer a {
+    display: inline-block; /* Permite definir margens e padding sem quebrar o fluxo */
+    /* justify-content e align-items são para flexbox ou grid, não para elementos inline-block */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin: 10px; /* Adiciona um pouco de espaço ao redor de cada botão */
+    padding: 10px 20px; /* Estiliza o botão (exemplo) */
+    background-color: blue; /* Cor de fundo do botão (exemplo) */
+    color: white; /* Cor do texto do botão (exemplo) */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    border-radius: 8px; /* Adiciona bordas arredondadas (exemplo) */
+
+
+/* Opcional: Para centralizar ainda mais, você pode usar flexbox no footer */
+/* footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre os botões (opcional) */
+    padding: 20px;
+    background-color: #333;
+    color: #eee;
+}
+
+footer a {
+    display: inline-block; /* Ou pode manter como block se preferir um abaixo do outro em telas menores */
+    margin: 0; /* Remova margens individuais se usar flexbox para espaçamento */
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+} */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        margin-left: auto; /* Garante que a margem automática funcione */
+        margin-right: auto;
+    }
+
+    /* Remove as margens laterais em telas menores */
+    @media (max-width: 1399px) {
+        body {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    .ingredientes + ul {
+        text-align: left; /* Alinha a lista à esquerda em telas menores */
+        margin-top: 15px;
+    }
+
+    p {
+        padding: 15px 10px;
+        text-align: left;
+    }
+
+    img {
+        margin: 15px auto;
+    }
+
+    .botoes-container {
+        flex-direction: column; /* Coloca os botões um abaixo do outro em telas menores */
+        align-items: center; /* Centraliza os botões verticalmente */
+        gap: 10px;
+    }
+
+    .botoes-container a {
+        display: block; /* Faz os links ocuparem a largura total */
+        width: 100%;
+        margin: 0; /* Remove margens individuais dos links */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .botoes-container a {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
